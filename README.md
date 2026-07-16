@@ -1,16 +1,23 @@
-# 株式会社Ｇ・Ｅ Ｂｒａｉｎ コーポレートサイト
+# 株式会社Ｇ・Ｅ Ｂｒａｉｎ コーポレートサイト 完全版
 
-GitHub / Vercelへそのままアップロードできる静的サイトです。
+## 含まれる修正
+- トップキャッチコピー修正
+- システム開発支援
+- SNS運用支援
+- 代表者挨拶
+- PC / タブレット / スマホ対応
+- 画面幅が狭い時に黒い図形が文字へ重ならないよう修正
+- FormSubmitによるお問い合わせ送信
+- 送信完了ページ
+- Vercel設定
 
-## ファイル
-- `index.html`
-- `styles.css`
-- `script.js`
+## GitHubへの反映
+ZIPを解凍し、中のファイルをすべてリポジトリ直下へアップロードしてください。
+既存ファイルは上書きします。
 
-## Vercel設定
-- Framework Preset: `Other`
-- Root Directory: `./`
-- Build Command: 未設定
-- Output Directory: 未設定
+## フォーム初回設定
+初回のテスト送信後、`ge.brain.mats@gmail.com` にFormSubmitから確認メールが届きます。
+メール内の有効化リンクを押すと、以後のお問い合わせを受信できます。
 
-問い合わせフォームは表示・入力チェックまで実装済みです。実際の送信にはFormspree等の接続が必要です。
+## 公開URL
+https://ge-brain-corporate.vercel.app/

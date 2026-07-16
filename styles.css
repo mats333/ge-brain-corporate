@@ -612,3 +612,84 @@ svg{display:block}
   }
   .copyright{text-align:left}
 }
+
+/* ===== Hero overlap fix v2 =====
+   Keep the copy aligned to the normal page grid and reserve the right side
+   for the abstract artwork at every viewport width. */
+.hero-inner{
+  max-width:none;
+  margin-inline:auto;
+}
+.hero h1,
+.hero-en,
+.hero-copy,
+.hero-kicker{
+  position:relative;
+  z-index:5;
+}
+.hero h1{max-width:760px}
+.hero-copy{max-width:720px}
+
+@media (min-width:1201px){
+  .hero-dark{
+    width:min(35vw,560px);
+    height:min(35vw,560px);
+    right:-190px;
+    top:70px;
+  }
+  .hero-gold-line{
+    width:min(38vw,600px);
+    right:-100px;
+    top:420px;
+  }
+}
+
+@media (max-width:1200px) and (min-width:1001px){
+  .hero h1{max-width:650px;font-size:clamp(2.7rem,4.5vw,4rem)}
+  .hero-copy{max-width:620px}
+  .hero-dark{
+    width:330px;
+    height:330px;
+    right:-155px;
+    top:220px;
+  }
+  .hero-gold-line{
+    width:350px;
+    right:-120px;
+    top:475px;
+  }
+}
+
+@media (max-width:1000px) and (min-width:761px){
+  .hero h1{max-width:600px;font-size:clamp(2.45rem,5.2vw,3.45rem)}
+  .hero-copy{max-width:570px}
+  .hero-dark{
+    width:220px;
+    height:220px;
+    right:-125px;
+    top:auto;
+    bottom:80px;
+  }
+  .hero-gold-line{
+    width:260px;
+    right:-100px;
+    top:auto;
+    bottom:155px;
+  }
+}
+
+@media (max-width:760px){
+  .hero h1{max-width:100%}
+  .hero-copy{max-width:100%}
+  .hero-dark{
+    width:150px;
+    height:150px;
+    right:-112px;
+    bottom:58px;
+  }
+  .hero-gold-line{
+    width:180px;
+    right:-110px;
+    bottom:112px;
+  }
+}
